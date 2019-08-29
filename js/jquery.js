@@ -1,6 +1,150 @@
 $(function(){
     
     
+    function randomcolor(){
+                var boxcolor = ['#f2508b', '#0ec4d9', '#f29949'];
+               return boxcolor[Math.floor(Math.random()*3)];
+            };
+    
+    
+    function randompos(){
+        return Math.floor(Math.random()*-500)+"px";
+    }
+    function randompos2(){
+        return Math.floor(Math.random()*500)+"px";
+    }
+    
+    
+    function addbox(){
+        $('.box').css('display', 'block');
+        $('.box1').css('background-color', randomcolor());
+        $('.box2').css('background-color', randomcolor());
+        $('.box3').css('background-color', randomcolor());
+        $('.box4').css('background-color', randomcolor());
+        $('.box5').css('background-color', randomcolor());
+        $('.box6').css('background-color', randomcolor());
+        $('.box7').css('background-color', randomcolor());
+        $('.box8').css('background-color', randomcolor());
+        $('.box9').css('background-color', randomcolor());
+        $('.box10').css('background-color', randomcolor());
+        $('.box11').css('background-color', randomcolor());
+        $('.box12').css('background-color', randomcolor());
+        $('.box13').css('background-color', randomcolor());
+        $('.box14').css('background-color', randomcolor());
+        $('.box15').css('background-color', randomcolor());
+        $('.box16').css('background-color', randomcolor());
+        $('.box17').css('background-color', randomcolor());
+        $('.box18').css('background-color', randomcolor());
+        $('.box19').css('background-color', randomcolor());
+        $('.box20').css('background-color', randomcolor());
+        $('.box21').css('background-color', randomcolor());
+        $('.box22').css('background-color', randomcolor());
+        $('.box23').css('background-color', randomcolor());
+        $('.box24').css('background-color', randomcolor());
+        $('.box25').css('background-color', randomcolor());
+        $('.box26').css('background-color', randomcolor());
+        $('.box27').css('background-color', randomcolor());
+        $('.box28').css('background-color', randomcolor());
+        $('.box29').css('background-color', randomcolor());
+        $('.box30').css('background-color', randomcolor());
+        
+        $('.box1').animate({left: randompos(), top: randompos()}, 500, function(){
+            $('.box1').fadeOut(300);
+        });
+        $('.box2').animate({left: randompos2(), top: randompos()}, 500, function(){
+            $('.box2').fadeOut(300);
+        });
+        $('.box3').animate({left: randompos(), top: randompos2()}, 500, function(){
+            $('.box3').fadeOut(300);
+        });
+        $('.box4').animate({left: randompos(), top: randompos2()}, 500, function(){
+            $('.box4').fadeOut(300);
+        });
+        $('.box5').animate({left: randompos(), top: randompos()}, 500, function(){
+            $('.box5').fadeOut(300);
+        });
+        $('.box6').animate({left: randompos(), top: randompos()}, 500, function(){
+            $('.box6').fadeOut(300);
+        });
+        $('.box7').animate({left: randompos(), top: randompos2()}, 500, function(){
+            $('.box7').fadeOut(300);
+        });
+        $('.box8').animate({left: randompos2(), top: randompos2()}, 500, function(){
+            $('.box8').fadeOut(300);
+        });
+        $('.box9').animate({left: randompos(), top: randompos()}, 500, function(){
+            $('.box9').fadeOut(300);
+        });
+        $('.box10').animate({left: randompos(), top: randompos()}, 500, function(){
+            $('.box10').fadeOut(300);
+        });
+        $('.box11').animate({left: randompos(), top: randompos2()}, 500, function(){
+            $('.box11').fadeOut(300);
+        });
+        $('.box12').animate({left: randompos(), top: randompos2()}, 500, function(){
+            $('.box12').fadeOut(300);
+        });
+        $('.box13').animate({left: randompos2(), top: randompos2()}, 500, function(){
+            $('.box13').fadeOut(300);
+        });
+        $('.box14').animate({left: randompos2(), top: randompos()}, 500, function(){
+            $('.box14').fadeOut(300);
+        });
+        $('.box15').animate({left: randompos(), top: randompos()}, 500, function(){
+            $('.box15').fadeOut(300);
+        });
+        $('.box16').animate({left: randompos(), top: randompos()}, 500, function(){
+            $('.box16').fadeOut(300);
+        });
+        $('.box17').animate({left: randompos(), top: randompos()}, 500, function(){
+            $('.box17').fadeOut(300);
+        });
+        $('.box18').animate({left: randompos2(), top: randompos2()}, 500, function(){
+            $('.box18').fadeOut(300);
+        });
+        $('.box19').animate({left: randompos(), top: randompos()}, 500, function(){
+            $('.box19').fadeOut(300);
+        });
+        $('.box20').animate({left: randompos(), top: randompos()}, 500, function(){
+            $('.box20').fadeOut(300);
+        });
+        $('.box21').animate({left: randompos2(), top: randompos2()}, 500, function(){
+            $('.box21').fadeOut(300);
+        });
+        $('.box22').animate({left: randompos(), top: randompos2()}, 500, function(){
+            $('.box22').fadeOut(300);
+        });
+        $('.box23').animate({left: randompos(), top: randompos2()}, 500, function(){
+            $('.box23').fadeOut(300);
+        });
+        $('.box24').animate({left: randompos2(), top: randompos()}, 500, function(){
+            $('.box24').fadeOut(300);
+        });
+        $('.box25').animate({left: randompos(), top: randompos()}, 500, function(){
+            $('.box25').fadeOut(300);
+        });
+        $('.box26').animate({left: randompos2(), top: randompos2()}, 500, function(){
+            $('.box26').fadeOut(300);
+        });
+        $('.box27').animate({left: randompos(), top: randompos()}, 500, function(){
+            $('.box27').fadeOut(300);
+        });
+        $('.box28').animate({left: randompos(), top: randompos2()}, 500, function(){
+            $('.box28').fadeOut(300);
+        });
+        $('.box29').animate({left: randompos(), top: randompos2()}, 500, function(){
+            $('.box29').fadeOut(300);
+        });
+        $('.box30').animate({left: randompos(), top: randompos2()}, 500, function(){
+            $('.box30').fadeOut(300);
+        });
+    }
+    
+    
+    
+//    console.log(addbox());
+            
+    
     $('.quiz-btn').click(function(){
         
         var answer = $('#answer').val();
@@ -31,6 +175,7 @@ $(function(){
             
             img.removeClass('q2');
             img.addClass('q3');
+            
             
         }
         
@@ -452,7 +597,7 @@ $(function(){
             
         }
         
-        if (answer == "3" && img.hasClass('q35') ){
+        if (answer == "2" && img.hasClass('q35') ){
             
             alert('정답입니다.');
             
@@ -662,7 +807,7 @@ $(function(){
         
         if (answer == "placeholder" && img.hasClass('q51') ){
             
-            alert('정답입니다.');
+            addbox();
             
             $('.quiz-box').css('background-image', 'url(./images/quiz-51.jpg)');
             
@@ -671,8 +816,13 @@ $(function(){
             img.removeClass('q51');
             img.addClass('q52');
             
+            
         }
         
     });
+    
+    
+    
+    
     
 });
