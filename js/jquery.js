@@ -257,7 +257,7 @@ $(function(){
             
         }
         
-        if (answer == "<!DOCUTYPE html>" && img.hasClass('q9') ){
+        if (answer == "<!DOCTYPE html>" && img.hasClass('q9') ){
             
             alert('정답입니다.');
             
